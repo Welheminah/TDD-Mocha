@@ -4,9 +4,9 @@ describe('The regCheck function', function(){
         assert.equal(true, regCheck('DV 23 NB GP','GP'));
     });
     it('should retrun false if registration dont endswith GP', function(){
-        assert.equal(false, regCheck('CY 189-012'));
+        assert.equal(false, regCheck('CY 189-012', 'CA'));
     });
-    it('should retrun false if there is no registration', function(){
-        assert.equal(false, regCheck(''));
+    it('should retrun false, please enter valid registration number and location, if the string is empty', function(){
+        assert.equal('please enter valid registration number and location', regCheck('', ''));
     });
 });

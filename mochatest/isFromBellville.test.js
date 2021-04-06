@@ -6,7 +6,7 @@ describe('The isFromBellville function', function(){
     it('should retrun false if registration dont startswith CY', function(){
         assert.equal(false, isFromBellville('CJ 123'));
     });
-    it('should retrun false if there is no registration', function(){
-        assert.equal(false, isFromBellville(''));
+    it('should retrun true if registration startswith CY', function(){
+        assert.equal(true, isFromBellville('CY 345 789'));
     });
 });
