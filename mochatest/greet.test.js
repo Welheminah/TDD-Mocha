@@ -4,7 +4,10 @@ describe('The greet function', function(){
         assert.equal('Hello, Tebogo', greet('Tebogo'));
     });
     it('should greet Moipone correctly', function(){
-        // this test will fail - can you fix it?
         assert.equal('Hello, Moipone', greet('Moipone'));
     });
+    it('should greet Kabelo correctly', function(){
+        assert.equal('Hello, Kabelo', greet('Kabelo'));
+    });
+
 });

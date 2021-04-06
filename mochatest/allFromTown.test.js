@@ -1,12 +1,13 @@
-describe('The isFromCapeTown function', function(){
+describe('The countAllFromTown function', function(){
 
-    it('should return true if registration startswith CA', function(){
-        assert.equal(true, isFromCapeTown('CA 123 908'));
+    it('should return number of registration that are from Stellebosch, starting with CL', function(){
+        assert.equal(3, countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CL'));
     });
-    it('should retrun false if registration dont startswith CA', function(){
-        assert.equal(false, isFromCapeTown('CJ 123 908'));
+    it('should return the of number registration that are from Paarl, starting with CJ', function(){
+        assert.equal(1, countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CJ'));
     });
-    it('should retrun false if there is no registration', function(){
-        assert.equal(false, isFromCapeTown(''));
+    it('should return nothing there are registration numbers', function(){
+        assert.equal(0, countAllFromTown(''));
     });
+    
 });

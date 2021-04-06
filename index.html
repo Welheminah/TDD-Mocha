@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+    
+
 </head>
 
 <body>
@@ -14,6 +17,11 @@
     <script>
         mocha.setup('bdd');
         var assert = chai.assert;
+    </script>
+    <script>
+        mocha.setup({
+        globals: ['*']
+      });
     </script>
 
     <script src="./bootcamp-test/greet.js" charset="utf-8"></script>
@@ -34,6 +42,16 @@
     <script src="./mochatest/allFromTown.test.js"></script>
     <script src="./bootcamp-test/transportFee.js"></script>
     <script src="./mochatest/transportFee.test.js"></script>
+    <script src="./bootcamp-test/totalPhoneBill.js"></script>
+    <script src="./mochatest/totalPhoneBill.test.js"></script>
+    <script src="./bootcamp-test/fromWhere.js"></script>
+    <script src="./mochatest/fromWhere.test.js"></script>
+    <script src="./bootcamp-test/findItemsOver20.js"></script>
+    <script src="./mochatest/findItemsOver20.test.js"></script>
+    <script src="./bootcamp-test/findItemsOver.js"></script>
+    <script src="./mochatest/findItemsOver.test.js"></script>
+    <script src="./bootcamp-test/mostProfitableDepartment.js"></script>
+    <script src="./mochatest/mostProfitableDepartment.test.js"></script>
     <script>
         mocha.checkLeaks();
         mocha.run();
