@@ -21,7 +21,7 @@ var results2 = [];
 
 describe('The findItemsOver function', function(){
 
-    it('should return the items that are higher than the threshold', function(){
+    it('should return pears and banana which are higher than the threshold', function(){
         assert.deepEqual(findItemsOver(itemList, 25), results);
     });
     it('should return nothing if there are no items that are higher than the threshold', function(){

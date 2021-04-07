@@ -24,7 +24,7 @@ var results2 = [
 
 describe('The findItemsOver20 function', function(){
 
-    it('should return items that are over 20', function(){
+    it('should return pears and banana which are over 20', function(){
         assert.deepEqual(results, findItemsOver20(itemList));
     });
     it('should return nothing if there are no items over 20', function(){

@@ -39,10 +39,10 @@ var salesData3 = [];
 
 describe('The mostProfitableDepartment function', function(){
 
-    it('should return the most profitable department in the store', function(){
+    it('should return outdoor if outdoor is the most profitable department in the store', function(){
         assert.deepEqual('outdoor', mostProfitableDepartment(salesData));
     });
-    it('should return the most profitable department in the store', function(){
+    it('should return carpentry if carpentry is the most profitable department in the store', function(){
         assert.deepEqual('carpentry', mostProfitableDepartment(salesData2));
     });
     it('should return nothing if the data is not present', function(){
